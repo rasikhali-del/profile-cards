@@ -1,0 +1,91 @@
+/* ==============================
+   SEARCH BAR
+   ============================== */
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 40px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 14px 44px 14px 48px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Light */
+.search-wrapper.light .search-input {
+  background: rgba(255, 255, 255, 0.8);
+  color: #1a1a2e;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.search-wrapper.light .search-input::placeholder {
+  color: #aaa;
+}
+
+.search-wrapper.light .search-input:focus {
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25), 0 2px 20px rgba(0, 0, 0, 0.08);
+  border-color: rgba(102, 126, 234, 0.4);
+}
+
+/* Dark */
+.search-wrapper.dark .search-input {
+  background: rgba(25, 25, 55, 0.8);
+  color: #eef0ff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.search-wrapper.dark .search-input::placeholder {
+  color: #666;
+}
+
+.search-wrapper.dark .search-input:focus {
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2), 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-color: rgba(102, 126, 234, 0.3);
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.search-wrapper.light .clear-btn {
+  color: #999;
+}
+
+.search-wrapper.dark .clear-btn {
+  color: #666;
+}
+
+.clear-btn:hover {
+  color: #ff006e !important;
+  background: rgba(255, 0, 110, 0.1);
+}
